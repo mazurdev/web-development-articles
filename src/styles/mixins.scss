@@ -1,0 +1,25 @@
+$primary: #242931;
+$primary-dark :#1e2228; 
+$blue: #256a76;
+$pink: #cc2776;
+$white: white;
+$orange: #ffb35b;
+$red: #D40030;
+
+@mixin card-shadow {
+	-webkit-box-shadow: 10px 10px 37px -15px rgba(30, 34, 40, 0.75);
+  -moz-box-shadow: 10px 10px 37px -15px rgba(30, 34, 40, 0.75);
+  box-shadow: 10px 10px 37px -15px rgba(30, 34, 40, 0.75);
+  border-radius: 6px;
+}
+
+@mixin gradient {
+	background: $primary;
+  background: -webkit-linear-gradient(to right, $primary, $blue);
+  background: linear-gradient(to right, $primary, $blue);
+}
+
+@mixin font-style {
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.1rem
+}
