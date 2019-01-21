@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --prod"
+		"build": "vue-cli-service build",
+		"serve-build": "cd dist && http-server",
+		"deploy-git": "git push -u origin master",
+		"deploy-zeit": "npm run build && now && now alias"
   },
   "dependencies": {
     "prerender-spa-plugin": "^3.4.0",

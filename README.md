@@ -33,5 +33,6 @@ npm run serve | yarn serve
 ```bash
 npm run build | yarn build
 cd dist
-http-servre -o
+http-server
+open http://localhost:8080
 ```

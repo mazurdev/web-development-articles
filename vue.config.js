@@ -9,7 +9,8 @@ module.exports = {
 		return {
 			plugins: [
 				new PrerenderSpaPlugin(
-					path.join(__dirname, 'dist'),
+
+					path.resolve(__dirname, 'dist'),
 
 					[
 						'/',
@@ -34,7 +35,6 @@ module.exports = {
 						'/article/others/pwa'
 					],
 					{
-						
 					}
 				)
 			]
